@@ -1,5 +1,6 @@
 #defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
 from setuptools import setup, find_packages, Extension
+import numpy
 
 try:
     from Cython.Build import cythonize
