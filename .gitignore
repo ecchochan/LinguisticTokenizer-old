@@ -1,0 +1,11 @@
+*.html
+*.c
+*.cpp
+*.h
+*.so
+*.html
+test*
+build/*
+**/__pycache__/*
+*.egg-info/*
+dist*
