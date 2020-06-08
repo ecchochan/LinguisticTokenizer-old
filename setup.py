@@ -5,7 +5,8 @@ try:
     from Cython.Build import cythonize
 
     ext_modules = cythonize([
-        Extension("LinguisticTokenizer.tokenizer", ["LinguisticTokenizer/tokenizer.pyx"]),
+        Extension("LinguisticTokenizer.tokenizer", ["LinguisticTokenizer/tokenizer.pyx"],
+                  include_dirs=[numpy.get_include()]),
     ])
 except ImportError:
     ext_modules = None
